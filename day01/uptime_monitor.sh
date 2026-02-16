@@ -1,10 +1,9 @@
 #!/bin/bash
-# Use a very stable site for testing
 URL="example.com"
 
-# Check if we can reach the site
 if curl -sL --connect-timeout 5 "$URL" > /dev/null; then
-    echo "$(date): $URL is UP ✅" >> uptime_log.txt
+    # We use the FULL PATH here so Cron knows exactly where to write
+    echo "$(date): $URL is UP ✅" >> /home/lambefavour/30-days-devops/day01/uptime_log.txt
 else
-    echo "$(date): $URL is DOWN ❌" >> uptime_log.txt
+    echo "$(date): $URL is DOWN ❌" >> /home/lambefavour/30-days-devops/day01/uptime_log.txt
 fi
