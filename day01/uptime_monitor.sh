@@ -7,3 +7,4 @@ if curl -sL --connect-timeout 5 "$URL" > /dev/null; then
 else
     echo "$(date): $URL is DOWN ❌" >> /home/lambefavour/30-days-devops/day01/uptime_log.txt
 fi
+# Updated Label
