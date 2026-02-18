@@ -12,4 +12,4 @@ df -h | grep '^/dev/' | awk '{print $1 ": " $5 " used (" $4 " available)"}'
 
 # Check CPU Load
 echo -e "\n3. CPU LOAD:"
-uptime | awk -F'load average:' '{ print $2 }'
+uptime | awk -F'load average:' '{ print $2 }'# Monitoring Resource
