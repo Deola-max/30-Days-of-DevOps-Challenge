@@ -1,11 +1,15 @@
-# 1. Go to your main project folder
-cd ~/30-days-devops
+#!/bin/bash
 
-# 2. Tell Git to prepare the Day 4 folder
-git add day04/
+echo "--- System Resource Report ($(date)) ---"
 
-# 3. Write your "stamp" for the day
-git commit -m "Day 4: System Resource Monitoring Script"
+# Check Memory Usage (RAM)
+echo "1. MEMORY USAGE:"
+free -h | awk '/^Mem:/ {print "Used: " $3 " / Total: " $2}'
 
-# 4. Push it to the cloud
-git push origin main
+# Check Disk Usage
+echo -e "\n2. DISK SPACE USAGE:"
+df -h | grep '^/dev/' | awk '{print $1 ": " $5 " used (" $4 " available)"}'
+
+# Check CPU Load
+echo -e "\n3. CPU LOAD:"
+uptime | awk -F'load average:' '{ print $2 }'
