@@ -28,6 +28,13 @@ I'm a fast-learning Tech Enthusiast currently diving deep into the world of Infr
 | 07  | Automated Weekly Backup | Tar, Gzip, Cron | ✅ Done |
 
 ---
+## 📅 The Journey (Week 2 - In Progress)
+
+| Day | Project Topic | Key Tools | Status |
+|-----|---------------|-----------|--------|
+| 08  | Managing Environment Variables | Export, Env, Bash | ✅ Done |
+| 09  | Service Health & Auto-Restart| Systemd, Grep, Bash | ✅ Done |
+| 10  | (Coming Soon...) | ... | ⏳ Next |
 
 ## 📈 Goals for this Challenge
 - Master Linux Administration & Bash Automation.
