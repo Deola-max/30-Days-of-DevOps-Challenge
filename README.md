@@ -35,7 +35,10 @@ I'm a fast-learning Tech Enthusiast currently diving deep into the world of Infr
 | 08  | Managing Environment Variables | Export, Env, Bash | ✅ Done |
 | 09  | Service Health & Auto-Restart| Systemd, Grep, Bash | ✅ Done |
 | 10  | System Resource Monitor | ps, sort, awk, head | ✅ Done |
-| 11  | (Coming Soon...) | ... | ⏳ Next |
+| 11  | System Drift Detector | Bash | ✅ Done |
+| 12  | Automated System Auditor |Python, psutil, JSON | ✅ Done |
+| 13  | (Coming Soon...) | ... | ⏳ Next |
+
 
 ## 📈 Goals for this Challenge
 - Master Linux Administration & Bash Automation.
