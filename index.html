@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favour-Watch Dashboard 👸</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { background: #0f172a; color: white; font-family: sans-serif; text-align: center; }
+        .container { display: flex; justify-content: center; gap: 20px; margin-top: 50px; }
+        .card { background: #1e293b; padding: 20px; border-radius: 15px; width: 200px; }
+        h1 { color: #38bdf8; }
+    </style>
+</head>
+<body>
+    <h1>🛰️ Favour-Watch: Live System Monitor</h1>
+    <div class="container">
+        <div class="card"><h3>CPU</h3><canvas id="cpuChart"></canvas></div>
+        <div class="card"><h3>RAM</h3><canvas id="ramChart"></canvas></div>
+        <div class="card"><h3>DISK</h3><canvas id="diskChart"></canvas></div>
+    </div>
+    
+    <script>
+        function createChart(id, color) {
+            return new Chart(document.getElementById(id), {
+                type: 'doughnut',
+                data: {
+                    datasets: [{ data: [0, 100], backgroundColor: [color, '#334155'], borderWidth: 0 }]
+                },
+                options: { cutout: '80%' }
+            });
+        }
+
+        const cpuChart = createChart('cpuChart', '#f87171');
+        const ramChart = createChart ('ramChart', '#fbbf24');
+        const diskChart = createChart('diskChart', '#34d399');
+
+        // This function "Fetches" the data every 2 seconds
+        async function updateStats() {
+            const res = await fetch('http://127.0.0.1:5000/api/stats');
+            const data = await res.json();
+
+            cpuChart.data.datasets[0].data = [data.cpu, 100 - data.cpu];
+            ramChart.data.datasets[0].data = [data.ram, 100 - data.ram];
+            diskChart.data.datasets[0].data = [data.disk, 100 - data.disk];
+
+            cpuChart.update(); ramChart.update(); diskChart.update();
+        }
+
+        setInterval(updateStats, 2000);
+    </script>
+</body>
+</html>
