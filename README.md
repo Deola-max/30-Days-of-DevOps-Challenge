@@ -36,8 +36,10 @@ I'm a fast-learning Tech Enthusiast currently diving deep into the world of Infr
 | 09  | Service Health & Auto-Restart| Systemd, Grep, Bash | ✅ Done |
 | 10  | System Resource Monitor | ps, sort, awk, head | ✅ Done |
 | 11  | System Drift Detector | Bash | ✅ Done |
-| 12  | Automated System Auditor |Python, psutil, JSON | ✅ Done |
-| 13  | (Coming Soon...) | ... | ⏳ Next |
+| 12  | Automated System Auditor & Favour-Watch Dashboard |Python, psutil, JSON,Flask, Chart.js |Dashboard & API Live!  | ✅ Done |
+| 13  |Log Janitor (Housekeeping) | "Python (os, shutil, time) | ✅ Done |
+| 14  | (Coming Soon...) | ... | ⏳ Next |
+
 
 
 ## 📈 Goals for this Challenge
