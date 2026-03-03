@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  uptime-monitor:
+    build: .                 # Tells Docker to use your Dockerfile
+    container_name: my-uptime-app
+    volumes:
+      - /c/Users/FAVOUR/docker-data:/app/data  # Connects to your folder
+    restart: always          # If the laptop restarts, the app restarts!
