@@ -9,11 +9,13 @@ This project is part of the *TS Academy 30-Days-of-DevOps Challenge*. I am follo
 I'm a fast-learning Tech Enthusiast currently diving deep into the world of Infrastructure, Automation, and Cloud Security. This challenge is my way of "Building in Public" and mastering the tools that power the modern web.
 
 ## 🛠️ Tech Stack (So far...)
-- **OS:** Linux (Ubuntu/WSL)
-- **Scripting:** Bash 🐚
-- **Version Control:** Git & GitHub
-- **Networking:** TCP/IP, Port Scanning
-- **Security:** Permissions, Firewalls & Backups
+- **OS:** Linux (Ubuntu/WSL) 🐧
+- **Scripting & Logic:** Bash 🐚, Python (OS, Requests, Dotenv) 🐍
+- **Containerization:** Docker, Docker Compose 🐳
+- **Automation:** Cron Jobs, Systemd ⚙️
+- **Version Control:** Git & GitHub (Secrets Management) 🛡️
+- **Networking:** TCP/IP, Port Scanning, Telegram Bot API 📡
+- **Security:** Permissions, Firewalls, Backups, .env Security 🔑
 
 ## 📅 The Journey (Week 1 Recap)
 
