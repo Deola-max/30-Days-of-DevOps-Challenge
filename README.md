@@ -28,7 +28,7 @@ I'm a fast-learning Tech Enthusiast currently diving deep into the world of Infr
 | 07  | Automated Weekly Backup | Tar, Gzip, Cron | ✅ Done |
 
 ---
-## 📅 The Journey (Week 2 - In Progress)
+## 📅 The Journey (Week 2 - Recap)
 
 | Day | Project Topic | Key Tools | Status |
 |-----|---------------|-----------|--------|
@@ -38,8 +38,17 @@ I'm a fast-learning Tech Enthusiast currently diving deep into the world of Infr
 | 11  | System Drift Detector | Bash | ✅ Done |
 | 12  | Automated System Auditor & Favour-Watch Dashboard |Python, psutil, JSON,Flask, Chart.js |Dashboard & API Live | ✅ Done |
 | 13  |Log Janitor (Housekeeping) | "Python (os, shutil, time) | ✅ Done |
-| 14  | (Coming Soon...) | ... | ⏳ Next |
+| 14  | Telegram AlertBot Integration | Python, Telegram API, WSL | ✅ Done |
 
+## 📅 The Journey (Week 3 - in-progress)
+| Day | Project Topic | Key Tools | Status |
+|-----|---------------|-----------|--------|
+| 15  | Secrets Management (Lock & Key) | .env Files, Dotenv, GitIgnore | ✅ Done |
+| 16  | Python Log Rotator and Archiver script.  | (os, shutil)| python | ✅ Done |
+| 17  | Docker Containerization Integrated | Dockerfile, Build Context | ✅ Done |
+| 18  | Data Persistence & Volumes | Docker Volumes (-v) | ✅ Done |
+| 19  | Continuous Monitoring | Detached Mode & Loops | ✅ Done |
+| 20  | Container Orchestration | Docker Compose (YAML) | ✅ Done |
 
 
 ## 📈 Goals for this Challenge
