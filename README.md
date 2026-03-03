@@ -54,9 +54,10 @@ I'm a fast-learning Tech Enthusiast currently diving deep into the world of Infr
 
 
 ## 📈 Goals for this Challenge
-- Master Linux Administration & Bash Automation.
-- Build a consistent "Building in Public" habit.
-- Document 30 days of clean, reusable code.
+- **Infrastructure as Code:** Master Docker and Docker Compose for seamless environment orchestration. 🐳
+- **Automation & Monitoring:** Build real-time alert systems and self-healing scripts using Python and Bash. 🤖
+- **Cloud-Ready Security:** Implement best practices in Secrets Management and Linux hardening. 🛡️
+- **Building in Public:** Document 30 days of high-quality, reusable DevOps engineering to help the community. 🌍
 
 ---
 Follow my daily updates on [LinkedIn](https://www.linkedin.com/in/lambe-favour-589a63332/) 🚀
