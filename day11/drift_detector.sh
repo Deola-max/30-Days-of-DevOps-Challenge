@@ -29,7 +29,7 @@ else
     echo -e "${YELLOW}--- 🕵️‍♀️ Audit Started: $(date) ---${NC}"
     
     if [ ! -f "$DB_FILE" ]; then
-        echo "${RED}❌ Error: No baseline found! Run './drift_detector.sh --init' first.${NC}"
+        echo -e "${RED}❌ Error: No baseline found! Run './drift_detector.sh --init' first.${NC}"
         exit 1
     fi
 
@@ -37,7 +37,7 @@ else
     if md5sum --status -c "$DB_FILE"; then
         echo -e "${GREEN}🟢 STATUS: SUCCESS. No configuration drift detected.${NC}"
     else
-        echo "${RED}🚨 STATUS: DRIFT DETECTED! Unauthorized changes found!${NC}"
+        echo -e "${RED}🚨 STATUS: DRIFT DETECTED! Unauthorized changes found!${NC}"
         echo "---------------------------------------------------"
         # We use 'sed' to turn the specific "FAILED" text red
         md5sum -c "$DB_FILE" | grep "FAILED" | sed "s/FAILED/${RED}FAILED${NC}/"
