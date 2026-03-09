@@ -1,0 +1,13 @@
+services:
+  my-custom-app:
+    build: .  # This tells Docker to look for our 'Dockerfile'
+    ports:
+      - "8080:80"
+
+  database:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+      
