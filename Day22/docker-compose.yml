@@ -6,13 +6,13 @@ services:
     restart: always
     environment:
       POSTGRES_USER: favour_admin
-      POSTGRES_PASSWORD: password123
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: devops_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
   admin-panel:
-    image: adminer:latest
+    image: adminer:latest 
     restart: always
     ports:
       - 8080:8080
