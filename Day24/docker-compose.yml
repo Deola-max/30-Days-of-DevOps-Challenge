@@ -1,0 +1,11 @@
+services:
+  health-check-demo:
+    image: nginx:alpine
+    container_name: day24-doctor-demo
+    ports:
+      - "8081:80"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 10s # Check every 10 seconds
+      timeout: 5s   # Wait 5 seconds for response
+      retries: 3    # Try 3 times before calling it "Unhealthy"

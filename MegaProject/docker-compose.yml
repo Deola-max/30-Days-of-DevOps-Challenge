@@ -1,0 +1,40 @@
+services:
+  # The Frontend (Optimized Nginx)
+  web_server:
+    image: nginx:alpine
+    container_name: devops-mega-web
+    ports:
+      - "8085:80"
+    networks:
+      - backend_network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'     # Day 27: Resource Limits
+          memory: 50M
+    healthcheck:           # Day 24: Healthchecks
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    volumes:               # Day 25: Persistence
+      - web_data:/usr/share/nginx/html
+
+  # The Database (Secure & Persistent)
+  database:
+    image: postgres:15-alpine
+    container_name: devops-mega-db
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-securepassword123}
+    networks:
+      - backend_network
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+networks:                  # Day 26: Custom Networks
+  backend_network:
+    driver: bridge
+
+volumes:
+  web_data:
+  db_data:
